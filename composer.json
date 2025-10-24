@@ -12,7 +12,8 @@
     "require": {
         "php": ">=8.1",
         "phant/error": "1.*",
-        "aws/aws-sdk-php": "3.*"
+        "aws/aws-sdk-php": "3.*",
+        "phpunit/phpunit": "^12.4"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
@@ -24,7 +25,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Phant\\Client\\": "component/"
+            "Phant\\Client\\": "component/",
+            "Tests\\": "tests/"
         }
     }
 }

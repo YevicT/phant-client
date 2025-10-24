@@ -22,6 +22,8 @@ class Ftp implements \Phant\Client\Port\Ftp
             password: $password,
             port: $port
         );
+
+        ftp_pasv($this->connection, true);
     }
 
     private function connect(string $host, string $username, string $password, int $port): Connection
